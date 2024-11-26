@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/css/home.css">
+    <title>Home</title>
+</head>
+<body>
+<div class="add-expense-popup">
+    <label for="amount"></label><input type="number" id="amount" placeholder="Enter amount">
+    <label for="merchant"></label><input type="text" id="merchant" placeholder="Enter merchant">
+    <label for="category"></label><input type="text" id="category" placeholder="Enter description">
+    <label for="date"></label><input type="date" id="date" placeholder="Enter category">
+    <button id="enter-expense" type="button">Add</button>
+    <button id="cancel-expense" type="button">x</button>
+</div>
+<div class="home-page-container">
+    <div class="home-page-left">
+        <h1>Expenses</h1>
+        <button class="add-expense-button" id="add-expense-button">+ Add Expense</button>
+        <table class="expense-table" id="expense-table">
+            <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Merchant</th>
+                <th>Category</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr id="data">
+                <td>$50.00</td>
+                <td>Walmart</td>
+                <td>Groceries</td>
+                <td>11/26/2024</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="line"></div>
+    <div class="home-page-right">
+        <h1>Right</h1>
+    </div>
+    <script src="/frontend/js/homescripts.js"></script>
+</div>
+</body>
+</html>

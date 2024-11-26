@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+.home-page-container {
+    display: flex;
+    height: 100%;
+}
+.home-page-left, .home-page-right {
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-page-left {
+    flex: 3;
+    padding: 20px;
+    overflow-y: auto;
+    flex-direction: column;
+}
+.line   {
+    width: 1px;
+    background-color: black;
+    height: 100%;
+}
+table.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.expense-table td,
+table.expense-table th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+}
+table.expense-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+table.expense-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
