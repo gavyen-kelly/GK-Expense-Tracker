@@ -21,6 +21,7 @@ body, html {
     padding: 20px;
     overflow-y: auto;
     flex-direction: column;
+    justify-content: center;
 }
 .line   {
     width: 1px;
@@ -43,4 +44,59 @@ table.expense-table th {
 }
 table.expense-table tbody tr:nth-child(even) {
     background-color: #f9f9f9;
+}
+.add-expense-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.add-expense-form {
+    display: flex;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 200px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+.add-expense-form p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.add-expense-form label {
+    margin-bottom: 5px;
+}
+.add-expense-form button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+.add-expense-form button[type="button"] {
+    background-color: #f44336;
+}
+
+/* Cancel button specific styling */
+.add-expense-form button:hover {
+    background-color: #45a049;
+}
+
+.add-expense-form button[type="button"]:hover {
+    background-color: #e53935;
+}
+/* Centering pop-up form */
+.add-expense-popup form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
 }
